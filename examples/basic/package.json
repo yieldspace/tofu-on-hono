@@ -1,0 +1,16 @@
+{
+  "name": "basic-example",
+  "private": true,
+  "dependencies": {
+    "hono": "^3.5.1",
+    "tofu-on-hono": "workspace:*",
+    "vite": "^4.4.9"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^3.5.1"
+  }
+}

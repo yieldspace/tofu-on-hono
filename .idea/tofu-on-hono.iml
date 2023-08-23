@@ -5,6 +5,11 @@
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/examples/basic/.turbo" />
+      <excludeFolder url="file://$MODULE_DIR$/examples/basic/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/tofu-on-hono/.turbo" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/tofu-on-hono/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/tofu-on-hono/node_modules" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

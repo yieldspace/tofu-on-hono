@@ -3,17 +3,15 @@
     "lib": [
       "ESNext"
     ],
-    "module": "ESNext",
+    "module": "ES2022",
     "moduleResolution": "Node",
-    "target": "ESNext",
+    "target": "ES2022",
     "types": [
       "node",
-      "vite/client",
-      "@cloudflare/workers-types"
+      "vite/client"
     ],
     "strict": true,
-    "outDir": "dist",
-    "declaration": true
+    "outDir": "dist"
   },
   "include": [
     "src"

@@ -2,7 +2,8 @@
   "name": "tofu-on-hono",
   "version": "0.0.1",
   "types": "dist/index.d.ts",
-  "module": "dist/index.js",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
   "files": [
     "dist",
     "../../README.md",
@@ -15,6 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/yieldspace/tofu-on-hono"
   },
+  "license": "MIT",
   "keywords": [
     "hono",
     "cloudflare-workers",
@@ -31,11 +33,29 @@
   },
   "exports": {
     ".": {
-      "import": "dist/index.js",
+      "import": "dist/index.mjs",
+      "require": "dist/index.js",
       "types": "dist/index.d.ts"
+    },
+    "./vite": {
+      "import": "dist/vite/index.mjs",
+      "types": "dist/vite/index.d.ts",
+      "require": "dist/vite/index.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "vite": [
+        "./dist/vite"
+      ]
     }
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^20.5.3",
+    "hono": "^3.5.1",
+    "vite": "^4.4.9"
   }
 }
